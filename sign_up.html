@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>Course Sign Up Page</h1>
+    <p>Please Note: First Name, Last Name, Password and Email are required</p>
+    <form method="GET">
+
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+        <p></p>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="name@email.com" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+        <p>Are you over the age of 18</p>
+        <label for="yes">Yes:</label>
+        <input type="radio" name="over18" id="yes" value="yes">
+        <label for="no">No:</label>
+        <input type="radio" name="over18" id="no" value="no">
+        <p>Do You have a credit card or PayPal?</p>
+        <select name="payment" id="payment">
+            <option value="cc">Credit Card</option>
+            <option value="pp">Paypal</option>
+        </select>
+        <p></p>
+        <input type="submit" value="SignUp">
+    </form>
+
+
+
+
+
+
 </body>
+
 </html>
